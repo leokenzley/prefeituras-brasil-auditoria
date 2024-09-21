@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "dd548ef1-7115-4571-8199-ecbd32090654",
+		"name": "Cyber Audit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1717938",
+		"_collection_link": "https://orange-satellite-817724.postman.co/workspace/Prefeitura~33784354-76e6-475d-bd11-6289b79aabf9/collection/1717938-dd548ef1-7115-4571-8199-ecbd32090654?action=share&source=collection_link&creator=1717938"
+	},
+	"item": [
+		{
+			"name": "Contratos",
+			"item": [
+				{
+					"name": "find contracts by key word",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"anoInicial\": 2020,\n    \"palavrasChaves\":[\n        \"CRECHE\",\n        \"LUZINET\",\n        \"SANTOS\",\n        \"INFANTIL\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auditoria-contratos/auditar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auditoria-contratos",
+								"auditar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find contracts by key word",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"palavrasChave\": [\"CONTRATAÇÃO\", \"INFANTIL\", \"CRECH\", \"ESCOLA\", \"ENSINO\"],\n \"contratos\": {\n        \"dados\": [\n            {\n                \"id\": 360,\n                \"label\": \"Contrato 122/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 253,\n                \"valor\": \"48.000,00\",\n                \"numero\": \"122\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"25/05/2021\",\n                \"data_firmatura\": \"25/05/2021\",\n                \"inicio_vigencia\": \"25/05/2021\",\n                \"fim_vigencia\": \"25/05/2022\",\n                \"fornecedor_nome\": \"SOLUCAO CONSULTORIA E DIGITALIZACAO EIRELI\",\n                \"fornecedor_cpfcnpj\": \"21.503.766/0001-69\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATAÇÃO DE EMPRESA DE CONSULTORIA EM GESTÃO PUBLICA, PARA AREA DE CAPTAÇÃO, EXECUÇÃO E ACOMPANHAMENTO DE PROJETOS ORIUNDOS DO GOVERNO ESTADUAL E FEDERAL\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"88.374,65\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 148,\n                \"label\": \"Contrato 15/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 47,\n                \"valor\": \"156.000,00\",\n                \"numero\": \"15\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"20/01/2021\",\n                \"data_firmatura\": \"20/01/2021\",\n                \"inicio_vigencia\": \"20/01/2021\",\n                \"fim_vigencia\": \"20/01/2022\",\n                \"fornecedor_nome\": \"JOSÉ ELITON DE FIGUEREDO\",\n                \"fornecedor_cpfcnpj\": \"003.447.701-25\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATO PARA PRESTAÇÃO TERCEIRIZADA DE SERVIÇOS JURÍDICOS REGULARES, E DE ADVOCACIA EM GERAL, A SEREM PRESTADOS Á PREFEITURA MUNICIPAL DE DAMIANÓPOLIS , COM VISTAS A DEFESA DOS INTERESSES DO MUNICÍPIO EM AÇÕES JUDICIAIS DAS ÁREAS DO DIREITO CORRELATAS ÁS ATIVIDADES MUNICIPAIS, EM TRAMITAÇÃO OU QUE VIEREM A TRAMITAR PERANTE O PODER JUDICIÁRIO.\",\n                \"fiscal_contrato\": null,\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"360.022,92\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 355,\n                \"label\": \"Contrato 120/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 65,\n                \"valor\": \"138.971,35\",\n                \"numero\": \"120\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"11/05/2021\",\n                \"data_firmatura\": \"11/05/2021\",\n                \"inicio_vigencia\": \"11/05/2021\",\n                \"fim_vigencia\": \"11/05/2022\",\n                \"fornecedor_nome\": \"BKN SOLUÇOES ENGENHARIA E AUDITORIA AMBIENTAL LTDA\",\n                \"fornecedor_cpfcnpj\": \"41.397.372/0001-80\",\n                \"coronavirus\": null,\n                \"objeto\": \"SERVIÇO PARA PROJETO DE IMPLANTAÇÃO DE ATERRO\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": null,\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 172,\n                \"label\": \"Contrato 1/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 7,\n                \"valor\": \"26.400,00\",\n                \"numero\": \"1\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"01/12/2021\",\n                \"data_firmatura\": \"04/01/2021\",\n                \"inicio_vigencia\": \"04/01/2021\",\n                \"fim_vigencia\": \"31/12/2021\",\n                \"fornecedor_nome\": \"JOÃO HELIO LIMA NETO - ME\",\n                \"fornecedor_cpfcnpj\": \"10.999.245/0001-28\",\n                \"coronavirus\": null,\n                \"objeto\": \"PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS EM CONSULTORIA E ASSESSORIA CONTÁBIL, QUE FIRMAM O MUNICÍPIO DE DAMIANÓPOLIS E A EMPRESA CONTAP CONTABILIDADE, NOS TERMOS E CONDIÇÕES SEGUINTES.\",\n                \"fiscal_contrato\": \"ERALDO TAVARES PEREIRA\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"333.420,72\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Aditivo\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            }\n        ],\n        \"total\": 4,\n        \"orgao_principal\": null,\n        \"sg_contratos_ocultar_alertas\": 0\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/contracts/audit/key-words",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contracts",
+								"audit",
+								"key-words"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"palavrasChave\": [\"CONTRATAÇÃO\", \"INFANTIL\", \"CRECH\", \"ESCOLA\", \"ENSINO\"],\n \"contratos\": {\n        \"dados\": [\n            {\n                \"id\": 360,\n                \"label\": \"Contrato 122/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 253,\n                \"valor\": \"48.000,00\",\n                \"numero\": \"122\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"25/05/2021\",\n                \"data_firmatura\": \"25/05/2021\",\n                \"inicio_vigencia\": \"25/05/2021\",\n                \"fim_vigencia\": \"25/05/2022\",\n                \"fornecedor_nome\": \"SOLUCAO CONSULTORIA E DIGITALIZACAO EIRELI\",\n                \"fornecedor_cpfcnpj\": \"21.503.766/0001-69\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATAÇÃO DE EMPRESA DE CONSULTORIA EM GESTÃO PUBLICA, PARA AREA DE CAPTAÇÃO, EXECUÇÃO E ACOMPANHAMENTO DE PROJETOS ORIUNDOS DO GOVERNO ESTADUAL E FEDERAL\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"88.374,65\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 148,\n                \"label\": \"Contrato 15/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 47,\n                \"valor\": \"156.000,00\",\n                \"numero\": \"15\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"20/01/2021\",\n                \"data_firmatura\": \"20/01/2021\",\n                \"inicio_vigencia\": \"20/01/2021\",\n                \"fim_vigencia\": \"20/01/2022\",\n                \"fornecedor_nome\": \"JOSÉ ELITON DE FIGUEREDO\",\n                \"fornecedor_cpfcnpj\": \"003.447.701-25\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATO PARA PRESTAÇÃO TERCEIRIZADA DE SERVIÇOS JURÍDICOS REGULARES, E DE ADVOCACIA EM GERAL, A SEREM PRESTADOS Á PREFEITURA MUNICIPAL DE DAMIANÓPOLIS , COM VISTAS A DEFESA DOS INTERESSES DO MUNICÍPIO EM AÇÕES JUDICIAIS DAS ÁREAS DO DIREITO CORRELATAS ÁS ATIVIDADES MUNICIPAIS, EM TRAMITAÇÃO OU QUE VIEREM A TRAMITAR PERANTE O PODER JUDICIÁRIO.\",\n                \"fiscal_contrato\": null,\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"360.022,92\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 355,\n                \"label\": \"Contrato 120/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 65,\n                \"valor\": \"138.971,35\",\n                \"numero\": \"120\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"11/05/2021\",\n                \"data_firmatura\": \"11/05/2021\",\n                \"inicio_vigencia\": \"11/05/2021\",\n                \"fim_vigencia\": \"11/05/2022\",\n                \"fornecedor_nome\": \"BKN SOLUÇOES ENGENHARIA E AUDITORIA AMBIENTAL LTDA\",\n                \"fornecedor_cpfcnpj\": \"41.397.372/0001-80\",\n                \"coronavirus\": null,\n                \"objeto\": \"SERVIÇO PARA PROJETO DE IMPLANTAÇÃO DE ATERRO\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": null,\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 172,\n                \"label\": \"Contrato 1/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 7,\n                \"valor\": \"26.400,00\",\n                \"numero\": \"1\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"01/12/2021\",\n                \"data_firmatura\": \"04/01/2021\",\n                \"inicio_vigencia\": \"04/01/2021\",\n                \"fim_vigencia\": \"31/12/2021\",\n                \"fornecedor_nome\": \"JOÃO HELIO LIMA NETO - ME\",\n                \"fornecedor_cpfcnpj\": \"10.999.245/0001-28\",\n                \"coronavirus\": null,\n                \"objeto\": \"PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS EM CONSULTORIA E ASSESSORIA CONTÁBIL, QUE FIRMAM O MUNICÍPIO DE DAMIANÓPOLIS E A EMPRESA CONTAP CONTABILIDADE, NOS TERMOS E CONDIÇÕES SEGUINTES.\",\n                \"fiscal_contrato\": \"ERALDO TAVARES PEREIRA\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"333.420,72\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Aditivo\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            }\n        ],\n        \"total\": 4,\n        \"orgao_principal\": null,\n        \"sg_contratos_ocultar_alertas\": 0\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/contracts/audit/key-words",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"contracts",
+										"audit",
+										"key-words"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Sep 2024 16:52:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"contractAdjustmentType\": null,\n        \"contractValue\": \"48.000,00\",\n        \"contractYear\": 2021,\n        \"contractLabel\": \"Contrato 122/2021\",\n        \"contractSituation\": \"Encerrado\",\n        \"contractDescription\": \"CONTRATAÇÃO DE EMPRESA DE CONSULTORIA EM GESTÃO PUBLICA, PARA AREA DE CAPTAÇÃO, EXECUÇÃO E ACOMPANHAMENTO DE PROJETOS ORIUNDOS DO GOVERNO ESTADUAL E FEDERAL\",\n        \"contractNumber\": \"122\",\n        \"contractSuplierName\": null,\n        \"contractSuplierTaxId\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Auditoria Contratos By Supplier Name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"palavrasChave\": [\"LEOSVANIO\", \"SOLUCAO\", \"21.503.766/0001-69\"],\n \"contratos\": {\n        \"dados\": [\n            {\n                \"id\": 360,\n                \"label\": \"Contrato 122/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 253,\n                \"valor\": \"48.000,00\",\n                \"numero\": \"122\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"25/05/2021\",\n                \"data_firmatura\": \"25/05/2021\",\n                \"inicio_vigencia\": \"25/05/2021\",\n                \"fim_vigencia\": \"25/05/2022\",\n                \"fornecedor_nome\": \"SOLUCAO CONSULTORIA E DIGITALIZACAO EIRELI\",\n                \"fornecedor_cpfcnpj\": \"21.503.766/0001-69\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATAÇÃO DE EMPRESA DE CONSULTORIA EM GESTÃO PUBLICA, PARA AREA DE CAPTAÇÃO, EXECUÇÃO E ACOMPANHAMENTO DE PROJETOS ORIUNDOS DO GOVERNO ESTADUAL E FEDERAL\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"88.374,65\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 148,\n                \"label\": \"Contrato 15/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 47,\n                \"valor\": \"156.000,00\",\n                \"numero\": \"15\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"20/01/2021\",\n                \"data_firmatura\": \"20/01/2021\",\n                \"inicio_vigencia\": \"20/01/2021\",\n                \"fim_vigencia\": \"20/01/2022\",\n                \"fornecedor_nome\": \"JOSÉ ELITON DE FIGUEREDO\",\n                \"fornecedor_cpfcnpj\": \"003.447.701-25\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATO PARA PRESTAÇÃO TERCEIRIZADA DE SERVIÇOS JURÍDICOS REGULARES, E DE ADVOCACIA EM GERAL, A SEREM PRESTADOS Á PREFEITURA MUNICIPAL DE DAMIANÓPOLIS , COM VISTAS A DEFESA DOS INTERESSES DO MUNICÍPIO EM AÇÕES JUDICIAIS DAS ÁREAS DO DIREITO CORRELATAS ÁS ATIVIDADES MUNICIPAIS, EM TRAMITAÇÃO OU QUE VIEREM A TRAMITAR PERANTE O PODER JUDICIÁRIO.\",\n                \"fiscal_contrato\": null,\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"360.022,92\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 355,\n                \"label\": \"Contrato 120/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 65,\n                \"valor\": \"138.971,35\",\n                \"numero\": \"120\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"11/05/2021\",\n                \"data_firmatura\": \"11/05/2021\",\n                \"inicio_vigencia\": \"11/05/2021\",\n                \"fim_vigencia\": \"11/05/2022\",\n                \"fornecedor_nome\": \"BKN SOLUÇOES ENGENHARIA E AUDITORIA AMBIENTAL LTDA\",\n                \"fornecedor_cpfcnpj\": \"41.397.372/0001-80\",\n                \"coronavirus\": null,\n                \"objeto\": \"SERVIÇO PARA PROJETO DE IMPLANTAÇÃO DE ATERRO\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": null,\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 172,\n                \"label\": \"Contrato 1/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 7,\n                \"valor\": \"26.400,00\",\n                \"numero\": \"1\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"01/12/2021\",\n                \"data_firmatura\": \"04/01/2021\",\n                \"inicio_vigencia\": \"04/01/2021\",\n                \"fim_vigencia\": \"31/12/2021\",\n                \"fornecedor_nome\": \"JOÃO HELIO LIMA NETO - ME\",\n                \"fornecedor_cpfcnpj\": \"10.999.245/0001-28\",\n                \"coronavirus\": null,\n                \"objeto\": \"PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS EM CONSULTORIA E ASSESSORIA CONTÁBIL, QUE FIRMAM O MUNICÍPIO DE DAMIANÓPOLIS E A EMPRESA CONTAP CONTABILIDADE, NOS TERMOS E CONDIÇÕES SEGUINTES.\",\n                \"fiscal_contrato\": \"ERALDO TAVARES PEREIRA\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"333.420,72\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Aditivo\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            }\n        ],\n        \"total\": 4,\n        \"orgao_principal\": null,\n        \"sg_contratos_ocultar_alertas\": 0\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/contracts/audit/supplier-name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contracts",
+								"audit",
+								"supplier-name"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n \"palavrasChave\": [\"LEOSVANIO\", \"SOLUCAO\", \"21.503.766/0001-69\"],\n \"contratos\": {\n        \"dados\": [\n            {\n                \"id\": 360,\n                \"label\": \"Contrato 122/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 253,\n                \"valor\": \"48.000,00\",\n                \"numero\": \"122\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"25/05/2021\",\n                \"data_firmatura\": \"25/05/2021\",\n                \"inicio_vigencia\": \"25/05/2021\",\n                \"fim_vigencia\": \"25/05/2022\",\n                \"fornecedor_nome\": \"SOLUCAO CONSULTORIA E DIGITALIZACAO EIRELI\",\n                \"fornecedor_cpfcnpj\": \"21.503.766/0001-69\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATAÇÃO DE EMPRESA DE CONSULTORIA EM GESTÃO PUBLICA, PARA AREA DE CAPTAÇÃO, EXECUÇÃO E ACOMPANHAMENTO DE PROJETOS ORIUNDOS DO GOVERNO ESTADUAL E FEDERAL\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"88.374,65\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 148,\n                \"label\": \"Contrato 15/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 47,\n                \"valor\": \"156.000,00\",\n                \"numero\": \"15\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"20/01/2021\",\n                \"data_firmatura\": \"20/01/2021\",\n                \"inicio_vigencia\": \"20/01/2021\",\n                \"fim_vigencia\": \"20/01/2022\",\n                \"fornecedor_nome\": \"JOSÉ ELITON DE FIGUEREDO\",\n                \"fornecedor_cpfcnpj\": \"003.447.701-25\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATO PARA PRESTAÇÃO TERCEIRIZADA DE SERVIÇOS JURÍDICOS REGULARES, E DE ADVOCACIA EM GERAL, A SEREM PRESTADOS Á PREFEITURA MUNICIPAL DE DAMIANÓPOLIS , COM VISTAS A DEFESA DOS INTERESSES DO MUNICÍPIO EM AÇÕES JUDICIAIS DAS ÁREAS DO DIREITO CORRELATAS ÁS ATIVIDADES MUNICIPAIS, EM TRAMITAÇÃO OU QUE VIEREM A TRAMITAR PERANTE O PODER JUDICIÁRIO.\",\n                \"fiscal_contrato\": null,\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"360.022,92\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 355,\n                \"label\": \"Contrato 120/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 65,\n                \"valor\": \"138.971,35\",\n                \"numero\": \"120\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"11/05/2021\",\n                \"data_firmatura\": \"11/05/2021\",\n                \"inicio_vigencia\": \"11/05/2021\",\n                \"fim_vigencia\": \"11/05/2022\",\n                \"fornecedor_nome\": \"BKN SOLUÇOES ENGENHARIA E AUDITORIA AMBIENTAL LTDA\",\n                \"fornecedor_cpfcnpj\": \"41.397.372/0001-80\",\n                \"coronavirus\": null,\n                \"objeto\": \"SERVIÇO PARA PROJETO DE IMPLANTAÇÃO DE ATERRO\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": null,\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 172,\n                \"label\": \"Contrato 1/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 7,\n                \"valor\": \"26.400,00\",\n                \"numero\": \"1\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"01/12/2021\",\n                \"data_firmatura\": \"04/01/2021\",\n                \"inicio_vigencia\": \"04/01/2021\",\n                \"fim_vigencia\": \"31/12/2021\",\n                \"fornecedor_nome\": \"JOÃO HELIO LIMA NETO - ME\",\n                \"fornecedor_cpfcnpj\": \"10.999.245/0001-28\",\n                \"coronavirus\": null,\n                \"objeto\": \"PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS EM CONSULTORIA E ASSESSORIA CONTÁBIL, QUE FIRMAM O MUNICÍPIO DE DAMIANÓPOLIS E A EMPRESA CONTAP CONTABILIDADE, NOS TERMOS E CONDIÇÕES SEGUINTES.\",\n                \"fiscal_contrato\": \"ERALDO TAVARES PEREIRA\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"333.420,72\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Aditivo\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            }\n        ],\n        \"total\": 4,\n        \"orgao_principal\": null,\n        \"sg_contratos_ocultar_alertas\": 0\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/contracts/audit/supplier-name",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"contracts",
+										"audit",
+										"supplier-name"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Sep 2024 17:05:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"contractAdjustmentType\": null,\n        \"contractValue\": \"48.000,00\",\n        \"contractYear\": 2021,\n        \"contractLabel\": \"Contrato 122/2021\",\n        \"contractSituation\": \"Encerrado\",\n        \"contractDescription\": \"CONTRATAÇÃO DE EMPRESA DE CONSULTORIA EM GESTÃO PUBLICA, PARA AREA DE CAPTAÇÃO, EXECUÇÃO E ACOMPANHAMENTO DE PROJETOS ORIUNDOS DO GOVERNO ESTADUAL E FEDERAL\",\n        \"contractNumber\": \"122\",\n        \"contractSuplierName\": \"SOLUCAO CONSULTORIA E DIGITALIZACAO EIRELI\",\n        \"contractSuplierTaxId\": \"21.503.766/0001-69\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Auditoria Contratos By Supplier Tax Id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"palavrasChave\": [\"LEOSVANIO\", \"SOLUCAO\", \"21.503.766/0001-69\"],\n \"contratos\": {\n        \"dados\": [\n            {\n                \"id\": 360,\n                \"label\": \"Contrato 122/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 253,\n                \"valor\": \"48.000,00\",\n                \"numero\": \"122\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"25/05/2021\",\n                \"data_firmatura\": \"25/05/2021\",\n                \"inicio_vigencia\": \"25/05/2021\",\n                \"fim_vigencia\": \"25/05/2022\",\n                \"fornecedor_nome\": \"SOLUCAO CONSULTORIA E DIGITALIZACAO EIRELI\",\n                \"fornecedor_cpfcnpj\": \"21.503.766/0001-69\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATAÇÃO DE EMPRESA DE CONSULTORIA EM GESTÃO PUBLICA, PARA AREA DE CAPTAÇÃO, EXECUÇÃO E ACOMPANHAMENTO DE PROJETOS ORIUNDOS DO GOVERNO ESTADUAL E FEDERAL\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"88.374,65\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 148,\n                \"label\": \"Contrato 15/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 47,\n                \"valor\": \"156.000,00\",\n                \"numero\": \"15\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"20/01/2021\",\n                \"data_firmatura\": \"20/01/2021\",\n                \"inicio_vigencia\": \"20/01/2021\",\n                \"fim_vigencia\": \"20/01/2022\",\n                \"fornecedor_nome\": \"JOSÉ ELITON DE FIGUEREDO\",\n                \"fornecedor_cpfcnpj\": \"003.447.701-25\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATO PARA PRESTAÇÃO TERCEIRIZADA DE SERVIÇOS JURÍDICOS REGULARES, E DE ADVOCACIA EM GERAL, A SEREM PRESTADOS Á PREFEITURA MUNICIPAL DE DAMIANÓPOLIS , COM VISTAS A DEFESA DOS INTERESSES DO MUNICÍPIO EM AÇÕES JUDICIAIS DAS ÁREAS DO DIREITO CORRELATAS ÁS ATIVIDADES MUNICIPAIS, EM TRAMITAÇÃO OU QUE VIEREM A TRAMITAR PERANTE O PODER JUDICIÁRIO.\",\n                \"fiscal_contrato\": null,\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"360.022,92\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 355,\n                \"label\": \"Contrato 120/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 65,\n                \"valor\": \"138.971,35\",\n                \"numero\": \"120\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"11/05/2021\",\n                \"data_firmatura\": \"11/05/2021\",\n                \"inicio_vigencia\": \"11/05/2021\",\n                \"fim_vigencia\": \"11/05/2022\",\n                \"fornecedor_nome\": \"BKN SOLUÇOES ENGENHARIA E AUDITORIA AMBIENTAL LTDA\",\n                \"fornecedor_cpfcnpj\": \"41.397.372/0001-80\",\n                \"coronavirus\": null,\n                \"objeto\": \"SERVIÇO PARA PROJETO DE IMPLANTAÇÃO DE ATERRO\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": null,\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 172,\n                \"label\": \"Contrato 1/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 7,\n                \"valor\": \"26.400,00\",\n                \"numero\": \"1\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"01/12/2021\",\n                \"data_firmatura\": \"04/01/2021\",\n                \"inicio_vigencia\": \"04/01/2021\",\n                \"fim_vigencia\": \"31/12/2021\",\n                \"fornecedor_nome\": \"JOÃO HELIO LIMA NETO - ME\",\n                \"fornecedor_cpfcnpj\": \"10.999.245/0001-28\",\n                \"coronavirus\": null,\n                \"objeto\": \"PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS EM CONSULTORIA E ASSESSORIA CONTÁBIL, QUE FIRMAM O MUNICÍPIO DE DAMIANÓPOLIS E A EMPRESA CONTAP CONTABILIDADE, NOS TERMOS E CONDIÇÕES SEGUINTES.\",\n                \"fiscal_contrato\": \"ERALDO TAVARES PEREIRA\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"333.420,72\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Aditivo\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            }\n        ],\n        \"total\": 4,\n        \"orgao_principal\": null,\n        \"sg_contratos_ocultar_alertas\": 0\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/contracts/audit/supplier-taxid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contracts",
+								"audit",
+								"supplier-taxid"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n \"palavrasChave\": [\"LEOSVANIO\", \"SOLUCAO\", \"21.503.766/0001-69\"],\n \"contratos\": {\n        \"dados\": [\n            {\n                \"id\": 360,\n                \"label\": \"Contrato 122/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 253,\n                \"valor\": \"48.000,00\",\n                \"numero\": \"122\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"25/05/2021\",\n                \"data_firmatura\": \"25/05/2021\",\n                \"inicio_vigencia\": \"25/05/2021\",\n                \"fim_vigencia\": \"25/05/2022\",\n                \"fornecedor_nome\": \"SOLUCAO CONSULTORIA E DIGITALIZACAO EIRELI\",\n                \"fornecedor_cpfcnpj\": \"21.503.766/0001-69\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATAÇÃO DE EMPRESA DE CONSULTORIA EM GESTÃO PUBLICA, PARA AREA DE CAPTAÇÃO, EXECUÇÃO E ACOMPANHAMENTO DE PROJETOS ORIUNDOS DO GOVERNO ESTADUAL E FEDERAL\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"88.374,65\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 148,\n                \"label\": \"Contrato 15/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 47,\n                \"valor\": \"156.000,00\",\n                \"numero\": \"15\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"20/01/2021\",\n                \"data_firmatura\": \"20/01/2021\",\n                \"inicio_vigencia\": \"20/01/2021\",\n                \"fim_vigencia\": \"20/01/2022\",\n                \"fornecedor_nome\": \"JOSÉ ELITON DE FIGUEREDO\",\n                \"fornecedor_cpfcnpj\": \"003.447.701-25\",\n                \"coronavirus\": null,\n                \"objeto\": \"CONTRATO PARA PRESTAÇÃO TERCEIRIZADA DE SERVIÇOS JURÍDICOS REGULARES, E DE ADVOCACIA EM GERAL, A SEREM PRESTADOS Á PREFEITURA MUNICIPAL DE DAMIANÓPOLIS , COM VISTAS A DEFESA DOS INTERESSES DO MUNICÍPIO EM AÇÕES JUDICIAIS DAS ÁREAS DO DIREITO CORRELATAS ÁS ATIVIDADES MUNICIPAIS, EM TRAMITAÇÃO OU QUE VIEREM A TRAMITAR PERANTE O PODER JUDICIÁRIO.\",\n                \"fiscal_contrato\": null,\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"360.022,92\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 355,\n                \"label\": \"Contrato 120/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 65,\n                \"valor\": \"138.971,35\",\n                \"numero\": \"120\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"11/05/2021\",\n                \"data_firmatura\": \"11/05/2021\",\n                \"inicio_vigencia\": \"11/05/2021\",\n                \"fim_vigencia\": \"11/05/2022\",\n                \"fornecedor_nome\": \"BKN SOLUÇOES ENGENHARIA E AUDITORIA AMBIENTAL LTDA\",\n                \"fornecedor_cpfcnpj\": \"41.397.372/0001-80\",\n                \"coronavirus\": null,\n                \"objeto\": \"SERVIÇO PARA PROJETO DE IMPLANTAÇÃO DE ATERRO\",\n                \"fiscal_contrato\": \"ADRIELE SOARES DE FARIAS\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": null,\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Outros\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Original\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            },\n            {\n                \"id\": 172,\n                \"label\": \"Contrato 1/2021\",\n                \"orgao\": 1,\n                \"orgao_nome\": \"PODER EXECUTIVO\",\n                \"licitacao_id\": 7,\n                \"valor\": \"26.400,00\",\n                \"numero\": \"1\",\n                \"ano\": 2021,\n                \"data_publicacao\": \"01/12/2021\",\n                \"data_firmatura\": \"04/01/2021\",\n                \"inicio_vigencia\": \"04/01/2021\",\n                \"fim_vigencia\": \"31/12/2021\",\n                \"fornecedor_nome\": \"JOÃO HELIO LIMA NETO - ME\",\n                \"fornecedor_cpfcnpj\": \"10.999.245/0001-28\",\n                \"coronavirus\": null,\n                \"objeto\": \"PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS EM CONSULTORIA E ASSESSORIA CONTÁBIL, QUE FIRMAM O MUNICÍPIO DE DAMIANÓPOLIS E A EMPRESA CONTAP CONTABILIDADE, NOS TERMOS E CONDIÇÕES SEGUINTES.\",\n                \"fiscal_contrato\": \"ERALDO TAVARES PEREIRA\",\n                \"situacao\": \"Encerrado\",\n                \"acrescimos\": \"333.420,72\",\n                \"decrescimos\": null,\n                \"rescisoes\": null,\n                \"assunto\": \"Obras e Serviços de Engenharia/Aquisição de Materiais (Engenharia)\",\n                \"tipoa_juste\": \"Contrato (termo inicial): Acordo formal recíproco de vontades firmado entre as partes\",\n                \"tipo\": \"Aditivo\",\n                \"opcoes\": \"Contrato\",\n                \"parcelas\": \"Fixa\",\n                \"anexos\": []\n            }\n        ],\n        \"total\": 4,\n        \"orgao_principal\": null,\n        \"sg_contratos_ocultar_alertas\": 0\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/contracts/audit/supplier-taxid",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"contracts",
+										"audit",
+										"supplier-taxid"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 Sep 2024 17:06:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"contractAdjustmentType\": null,\n        \"contractValue\": \"48.000,00\",\n        \"contractYear\": 2021,\n        \"contractLabel\": \"Contrato 122/2021\",\n        \"contractSituation\": \"Encerrado\",\n        \"contractDescription\": \"CONTRATAÇÃO DE EMPRESA DE CONSULTORIA EM GESTÃO PUBLICA, PARA AREA DE CAPTAÇÃO, EXECUÇÃO E ACOMPANHAMENTO DE PROJETOS ORIUNDOS DO GOVERNO ESTADUAL E FEDERAL\",\n        \"contractNumber\": \"122\",\n        \"contractSuplierName\": \"SOLUCAO CONSULTORIA E DIGITALIZACAO EIRELI\",\n        \"contractSuplierTaxId\": \"21.503.766/0001-69\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}

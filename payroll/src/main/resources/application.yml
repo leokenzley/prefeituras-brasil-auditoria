@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: contract-audit
+  http:
+    converters:
+      preferred-json-mapper: gson
+
+apis:
+  prefeitura:
+    url: https://acessoainformacao.damianopolis.go.gov.br/api
